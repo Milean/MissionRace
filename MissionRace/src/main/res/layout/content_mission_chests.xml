@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/chests_inventory_keys"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="28dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/chests_keyR"
+            android:src="@drawable/key_red"
+            android:contentDescription="Rode sleutels"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:id="@+id/chests_keyR_count"
+            android:textSize="20dp"
+            android:gravity="bottom"
+            android:layout_marginRight="10dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/chests_keyY"
+            android:src="@drawable/key_yellow"
+            android:contentDescription="Gele sleutels"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:id="@+id/chests_keyY_count"
+            android:textSize="20dp"
+            android:gravity="bottom"
+            android:layout_marginRight="10dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/chests_keyB"
+            android:background="@drawable/key_blue"
+            android:contentDescription="Blauwe sleutels"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:id="@+id/chests_keyB_count"
+            android:textSize="20dp"
+            android:layout_marginRight="10dp"
+            android:gravity="bottom"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/chests_inventory_parts"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_below="@id/chests_inventory_keys"
+        android:layout_height="28dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/chests_partA"
+            android:src="@drawable/part_a_nope"
+            android:contentDescription="Onderdeel A"
+            android:layout_marginLeft="10dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/chests_partB"
+            android:src="@drawable/part_b_nope"
+            android:contentDescription="Onderdeel B"/>
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/chests_partC"
+            android:src="@drawable/part_c_nope"
+            android:contentDescription="Onderdeel C"/>
+
+    </LinearLayout>
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chests_inventory_parts"
+        android:layout_alignParentBottom="true"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:id="@+id/chests_map" />
+
+</RelativeLayout>

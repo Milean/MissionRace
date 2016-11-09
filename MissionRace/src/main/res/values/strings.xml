@@ -1,0 +1,88 @@
+<resources>
+    <!-- General, app-describing strings -->
+    <string name="app_name">Mission Race</string>
+    <string name="action_info">Info</string>
+
+    <!-- Strings for Google Cloud Messaging -->
+    <string name="gcm_send_message">Token retrieved and sent to server! You can now use gcmsender to send downstream messages to this app.</string>
+    <string name="registering_message">Generating InstanceID token...</string>
+    <string name="token_error_message">An error occurred while either fetching the InstanceID token, sending the fetched token to the server or subscribing to the PubSub topic. Please try running the sample again.</string>
+
+    <!-- Strings just for the Main screen -->
+    <string name="mainWelcome">Welkom bij de Mission Race.\nVul je teamnaam in en klik START om naar je huidige missie te gaan.</string>
+    <string name="mainButtonText">Start!</string>
+    <string name="mainEditHint">Teamnaam...</string>
+    <string name="mainClearPreferencesButton">Wis opgeslagen informatie</string>
+    <string name="playerID_key">nl.milean.missionrace.PLAYERID</string>
+
+    <!-- Strings just for the Missions screen -->
+    <string name="missions_title">Missies</string>
+    <string name="missions_welcome">In the future this page will auto-redirect you to your current mission. For now you can just click the button below.</string>
+    <string name="missions_preferences">nl.milean.missionrace.MISSIONSPREFERENCES</string>
+
+    <!-- Strings shared by all missions -->
+    <string name="mission_new">Jullie hebben een nieuwe missie!</string>
+    <string name="mission_current">Dit is jullie huidige missie.</string>
+    <string name="mission_finished">Deze missie is al behaald.</string>
+    <string name="mission_autocomplete">Deze missie is automatisch al af.</string>
+    <string name="mission_button_previous">Vorige missie</string>
+    <string name="mission_button_next">Volgende missie</string>
+
+    <!-- Placeholders for when the mission details have not loaded onto the screen yet. -->
+    <string name="placeholder_mission_status">Wachten op het updaten van de missie status...</string>
+    <string name="placeholder_location_loading">Laden...</string>
+    <string name="placeholder_question_loading">De vraag laden...</string>
+    <string name="placeholder_text_loading">De tekst laden...</string>
+
+    <!-- Strings for all Distance Threshold missions -->
+    <string name="mission_distance_threshold_title">Afstand</string>
+    <string name="mission_distance_threshold_explanation1">Je volgende missie is:</string>
+    <string name="mission_distance_threshold_explanation2">meter bij je vandaan.</string>
+    <string name="mission_distance_threshold_reached">Je hebt de locatie bereikt!</string>
+
+    <!-- Strings for all Distance Threshold Hidden missions -->
+    <string name="mission_distance_threshold_hidden_title">Afstand</string>
+    <string name="mission_distance_threshold_hidden_explanation1">Je volgende missie is:</string>
+    <string name="mission_distance_threshold_hidden_explanation2">meter bij je vandaan.</string>
+    <string name="mission_distance_threshold_hidden_reached">Je hebt de locatie bereikt!</string>
+
+    <!-- Strings for all Distance Photo Hidden missions -->
+    <string name="mission_distance_photo_hidden_title">Foto op afstand</string>
+    <string name="mission_distance_photo_hidden_explanation">Je volgende missie begint hier:</string>
+
+    <!-- Strings for all Question missions -->
+    <string name="mission_question_title">Vraag</string>
+    <string name="mission_question_explanation">Beantwoord de volgende vraag:</string>
+    <string name="mission_question_hint">Vul het antwoord in.</string>
+    <string name="mission_question_submit_button">Verstuur</string>
+
+    <!-- Strings for all Photo missions -->
+    <string name="mission_photo_title">Foto</string>
+    <string name="mission_photo_explanation">Je volgende missie begint hier:</string>
+
+    <!-- Strings for all Reveal missions -->
+    <string name="mission_reveal_title">Onthul</string>
+    <string name="mission_reveal_question">Volgende vraag.</string>
+    <string name="mission_reveal_explanation">Beantwoord de vragen.</string>
+
+    <!-- Strings for all Distance Question missions -->
+    <string name="mission_distance_question_title">Een vraag over....</string>
+    <string name="mission_distance_question_explanation1">Deze vraag gaat over iets op een locatie die op dit moment</string>
+    <string name="mission_distance_question_explanation2">meter bij je vandaan is.</string>
+    <string name="mission_distance_question_reached">niet</string>
+    <string name="mission_distance_question_hint">Vul het antwoord in.</string>
+    <string name="mission_distance_question_submit_button">Verstuur</string>
+
+    <!-- Strings for all Text missions -->
+    <string name="mission_text_title">Mededeling</string>
+
+    <!-- Configuration settings for cloud messaging -->
+    <string name="PROJECT_ID">CLIENT_APP_ANDROID_PROJ_ID</string>
+    <string name="PROJECT_NUMBER">CLIENT_APP_ANDROID_PROJ_NUMBER</string>
+    <string name="GCM.Server.API_KEY">CLIENT_APP_SERVER_API_KEY</string>
+    <string name="GCM.GMApp.API_KEY">GM_APP_SERVER_API_KEY</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
+        CLIENT_APP_SERVER_API_KEY
+    </string>
+
+</resources>

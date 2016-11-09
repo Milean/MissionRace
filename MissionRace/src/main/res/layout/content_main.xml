@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="nl.milean.missionrace.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:id="@+id/mainGreeting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/mainWelcome" />
+    <Button
+        android:id="@+id/mainAssignmentButton"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mainGreeting"
+        android:layout_alignParentRight="true"
+        android:text="@string/mainButtonText"
+        android:onClick="actionGotoAssignments"/>
+    <EditText
+        android:id="@+id/mainPlayerID"
+        android:hint="@string/mainEditHint"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mainGreeting"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@id/mainAssignmentButton"/>
+    <!--Button
+        android:id="@+id/clear_shared_preferences_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:onClick="clearPreferences"
+        android:text="@string/mainClearPreferencesButton" /-->
+    <!--Button
+        android:id="@+id/otter_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/clear_shared_preferences_button"
+        android:onClick="loadOtter"
+        android:text="otter!" /-->
+
+</RelativeLayout>
